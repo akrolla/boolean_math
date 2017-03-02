@@ -1,4 +1,9 @@
-#ifndef READ_COMPLEX
-#define READ_COMPLEX
-void read_complex(int, int);
+#ifndef COMPLEX_H
+#define COMPLEX_H
+typedef struct 
+{
+  int real;
+  int imag;
+}complex; 
+void complex(int, int);
 #endif
