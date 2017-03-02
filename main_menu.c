@@ -7,6 +7,8 @@
  
  #include <stdio.h>
  #include "boolean.h"
+ #include "read_complex.h"
+ #include "write_complex.h"
 
 menu_sel; showmenu; 
  
