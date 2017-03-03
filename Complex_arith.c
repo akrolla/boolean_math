@@ -12,11 +12,11 @@ complex add_complex(complex num1 , complex num2)
 
 
 
-//negation
+//subtraction
 
 complex negate_complex(complex num1 , complex num2)
 {
-complex ans;
+  complex ans;
   ans.real = num1.real - num2.real;
   ans.imag = num1.imag - num2.imag;
   return ans;
@@ -45,13 +45,17 @@ complex conjugate_complex(complex num1)
 
 //negate
 
- negate_complex(complex num1 , complex num2)
+ complex negate_complex(complex num1)
 {
+  complex ans;
   ans.real = -1 * num.real;
   ans.imag = -1 * num.imag;
   return ans;
 }
 
 
+//division 
 
-
+void divide_complex(complex num1, complex num2)
+{
+   
