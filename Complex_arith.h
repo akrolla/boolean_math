@@ -10,7 +10,7 @@ complex negate_complex(complex, complex);
 #endif
 
 #ifndef DIVIDE_H
-#define NEGATE_H
+#define DIVIDE_H
 void divide_complex(complex, complex);
 #endif
 
