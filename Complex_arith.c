@@ -66,8 +66,8 @@ void divide_complex(complex num1, complex num2)
    {
      numer = multiply(num1, conjugate_complex(num2));
      denom = multiply(num2, conjugate_complex(num2));
-    ans_real = numer.real / denom.real;
-    ans_imag = numer.imag / denom.real;
+    ans_real = (float) numer.real / denom.real;
+    ans_imag = (float) numer.imag / denom.real;
       if(ans_imag<0)
         printf("%f%fi ", ans_real , ans_imag);
    else
