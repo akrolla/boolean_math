@@ -35,23 +35,36 @@ menu_sel; showmenu;
 						scanf("%d" , &menu_sel);
 						}
 					switch(menu_sel){
-								case 1: printf("Addition");
-								
-								break;
-								case 2: printf("Subtraction");
-								
-								break;
-								case 3: printf("Multiplication");
+								case 1: num1 = read_complex();
+									num2 = read_complex();
+									ans = add_complex(num1 , num2);
+									write_complex(ans);
+									break;
+								case 2: num1 = read_complex();
+									num2 = read_complex();
+									ans = sub_complex(num1 , num2);
+									write_complex(ans);
+									break;
+								case 3: num1 = read_complex();
+									num2 = read_complex();
+									ans = multiply_complex(num1 , num2);
+									write_complex(ans);
 							
-								break;
-								case 4: printf("Divison");
+									break;
+								case 4: num1 = read_complex();
+									num2 = read_complex();
+									divide_complex(num1 , num2);
 								
-								break;
-								case 5: printf("Conjugation");
-								
-								break;
-								case 6:	printf("Negation");
-								
+									break;
+								case 5: num1 = read_complex();
+									conjugate_complex(num1);
+									ans = conjugate_complex(num1);
+									write_complex(ans);
+									break;
+								case 6: num1 = read_complex();
+									sub_complex(num1);
+									ans = sub_complex(num1);
+									write_complex(ans);
 								break;
 								case 7: showmenu = !showmenu;
 								
