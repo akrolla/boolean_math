@@ -27,7 +27,7 @@ complex multiply_complex( complex num1 , complex num2)
 {
   complex ans;
   ans.real = (num1.real * num2.real) - (num1.imag * num2.imag);
-  ans.imag = (num1.real * num2.imag) + (num2.real*num1.imag);
+  ans.imag = (num1.real * num2.imag) + (num2.real * num1.imag);
   return ans;
 }
 
