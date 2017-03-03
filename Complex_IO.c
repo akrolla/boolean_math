@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include "complex.h"
+#include "Complex.h"
+
 complex read_complex(void)
 {
 complex num;
