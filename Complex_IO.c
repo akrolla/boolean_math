@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "complex.h"
-#include "Complex.h"
+#include "Complex_IO.h"
 
 complex read_complex(void)
 {
@@ -13,7 +13,12 @@ return num;
 }
 
 
-void write_complex(complex)
+void write_complex(complex num)
 {
-printf("%d + %di", num.real , num.imag);
+if(num.imag>0)
+printf("%d + %di\n", num.real , num.imag);
+else
+	{
+	printf("%d%di\n", num.real , num.imag);
+	}
 }

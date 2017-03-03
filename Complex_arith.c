@@ -3,6 +3,7 @@
  #include "boolean.h"
  #include "Complex_arith.h"
  #include "Complex_IO.h"
+ #include "complex.h"
  #include <math.h>
 
 
@@ -59,8 +60,8 @@ complex conjugate_complex(complex num1)
  complex negate_complex(complex num1)
 {
   complex ans;
-  ans.real = -1 * num.real;
-  ans.imag = -1 * num.imag;
+  ans.real = -1 * num1.real;
+  ans.imag = -1 * num1.imag;
   return ans;
 }
 
@@ -71,14 +72,14 @@ void divide_complex(complex num1, complex num2)
 {
  float ans_real, ans_imag;
   complex numer,denom;
- if( denom==0)
+ if(denom.real==0)
    printf("Error! Cannot divide by zero\n");
    else
    {
-     numer = multiply(num1, conjugate_complex(num2));
-     denom = multiply(num2, conjugate_complex(num2));
-    ans_real = (float) numer.real / denom.real;
-    ans_imag = (float) numer.imag / denom.real;
+     numer.real = multiply_complex(num1, conjugate_complex(num2)).real;
+     denom.real = multiply_complex(num2, conjugate_complex(num2)).real;
+    ans_real = numer.real / denom.real;
+    ans_imag = numer.real / denom.real;
       if(ans_imag<0)
         printf("%f%fi ", ans_real , ans_imag);
    else

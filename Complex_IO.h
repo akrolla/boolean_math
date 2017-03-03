@@ -1,6 +1,6 @@
 #ifndef READCOMPLEX_H
 #define READCOMPLEX_H
-void read_complex(void);
+complex read_complex(void);
 #endif
 
 #ifndef WRITECOMPLEX_H
