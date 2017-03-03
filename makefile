@@ -1,5 +1,5 @@
 C = gcc
-CFLAGS = -o 
+CFLAGS = 
 LDFLAGS = -lm
 
 OBJS = 
