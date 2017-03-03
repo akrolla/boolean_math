@@ -14,7 +14,7 @@ complex add_complex(complex num1 , complex num2)
 
 //subtraction
 
-complex negate_complex(complex num1 , complex num2)
+complex subtract_complex(complex num1 , complex num2)
 {
   complex ans;
   ans.real = num1.real - num2.real;
