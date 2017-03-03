@@ -1,9 +1,9 @@
-#ifndef COMPLEX_H
-#define COMPLEX_H
+#ifndef COMPLEX
+#define COMPLEX
 typedef struct 
 {
   int real;
   int imag;
-}complex; 
-void complex(int, int);
+} complex; 
+
 #endif

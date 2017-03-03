@@ -1,4 +1,4 @@
-  /*
+ /*
  Cody Webb
  CPII 
  2/28/17
@@ -7,14 +7,14 @@
  
  #include <stdio.h>
  #include "boolean.h"
- #include "Complex_arith.h"
+ #include "complex.h"
  #include "Complex_IO.h"
- #include "complex.h
+ #include "Complex_arith.h"
 int menu_sel , showmenu;
- complex num1, num2, ans;
+complex num1, num2, ans; 
  
  int main(void){
-		booean quit = FALSE;
+		boolean quit = FALSE;
 		boolean showmenu = TRUE;
 		int menu_sel;
 		while(!quit){
@@ -25,13 +25,13 @@ int menu_sel , showmenu;
 							printf("4 Division\n");
 							printf("5 Conjugation\n");
 							printf("6 Negation\n");
-							printf("7 Toggle Menu\n")
+							printf("7 Toggle Menu\n");
 							printf("8 Quit\n");
 							printf("Please Enter a Selection");
 							scanf("%d" , &menu_sel);
 								}	
 					else{
-						printf("Please Enter a Selection.\n #4 To Toggle the Menu\n");
+						printf("Please Enter a Selection.\n #7 To Toggle the Menu\n");
 						scanf("%d" , &menu_sel);
 						}
 					switch(menu_sel){
@@ -62,10 +62,10 @@ int menu_sel , showmenu;
 									write_complex(ans);
 									break;
 								case 6: num1 = read_complex();
-									sub_complex(num1);
-									ans = sub_complex(num1);
+									negate_complex(num1);
+									ans = negate_complex(num1);
 									write_complex(ans);
-								break;
+									break;
 								case 7: showmenu = !showmenu;
 								
 								break;
