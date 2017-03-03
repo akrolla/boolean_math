@@ -1,4 +1,4 @@
- /*
+  /*
  Cody Webb
  CPII 
  2/28/17
@@ -10,8 +10,8 @@
  #include "Complex_arith.h"
  #include "Complex_IO.h"
  #include "complex.h
-menu_sel; showmenu; 
- 
+int menu_sel , showmenu;
+ complex num1, num2, ans;
  
  int main(void){
 		booean quit = FALSE;
