@@ -58,4 +58,19 @@ complex conjugate_complex(complex num1)
 
 void divide_complex(complex num1, complex num2)
 {
-   
+ float ans_real, ans_imag;
+  complex numer,denom;
+ if( denom==0)
+   printf("Error! Cannot divide by zero\n");
+   else
+   {
+     numer = multiply(num1, conjugate_complex(num2));
+     denom = multiply(num2, conjugate_complex(num2));
+    ans_real = numer.real / denom.real;
+    ans_imag = numer.imag / denom.real;
+      if(ans_imag<0)
+        printf("%f%fi ", ans_real , ans_imag);
+   else
+     printf ("%f + %fi\n", ans_real , ans_imag);
+   }
+}
